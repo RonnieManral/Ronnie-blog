@@ -1,0 +1,151 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+{% block css %}
+<style>
+    .container {
+        min-height: 90vh;
+    }
+</style>
+{% endblock css %}
+{% block Homeactive %}active{% endblock Homeactive %}
+{% block body %}
+<div class="container-fluid px-0">
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/boot_img/1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Welcome to Ronnie Icoders</h5>
+          <p>Technology, News, Development and Trends.</p>
+          <a href="/services"><button class="btn btn-danger">Artificial Intelligence</button></a>
+          <button class="btn btn-primary">Web Development</button>
+          <button class="btn btn-success">Tech Fun</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/boot_img/2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>The Coding Blog</h5>
+          <p>Technology, News, Development and Trends.</p>
+          <a href="/services"><button class="btn btn-danger">Artificial Intelligence</button></a>
+          <button class="btn btn-primary">Web Development</button>
+          <button class="btn btn-success">Tech Fun</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/boot_img/3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Web development Blog</h5>
+          <p>Award Winning Blog.</p>
+          <a href="/services"><button class="btn btn-danger">Artificial Intelligence</button></a>
+          <button class="btn btn-primary">Web Development</button>
+          <button class="btn btn-success">Tech Fun</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+<div class="container my-3">
+  <h1 class="my-4 text-center">Select from our range of python courses</h1>
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/boot_img/thumb1.jpg" height="230" class="d-block w-100" alt="...">
+
+        <div class="card-body mt-0">
+          <strong class="d-inline-block mb-0 mt-0 text-danger">Design</strong>
+          <h5 class="mb-0">Learn Designing</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <a href="#" class="stretched-link mt-0">Continue reading..</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/boot_img/thumb2.jpg" height="230" class="d-block w-100" alt="...">
+
+        <div class="card-body mt-0">
+          <strong class="d-inline-block mb-0 mt-0 text-danger">Design</strong>
+          <h5 class="mb-0">Learn Designing</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <a href="#" class="stretched-link mt-0">Continue reading..</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/boot_img/thumb3.jpg" height="230" class="d-block w-100" alt="...">
+
+        <div class="card-body mt-0">
+          <strong class="d-inline-block mb-0 mt-0 text-danger">Design</strong>
+          <h5 class="mb-0">Learn Designing</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <a href="#" class="stretched-link mt-0">Continue reading..</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/boot_img/thumb4.jpg" height="230" class="d-block w-100" alt="...">
+
+        <div class="card-body mt-0">
+          <strong class="d-inline-block mb-0 mt-0 text-danger">Design</strong>
+          <h5 class="mb-0">Learn Designing</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <a href="#" class="stretched-link mt-0">Continue reading..</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/boot_img/thumb3.jpg" height="230" class="d-block w-100" alt="...">
+
+        <div class="card-body mt-0">
+          <strong class="d-inline-block mb-0 mt-0 text-danger">Design</strong>
+          <h5 class="mb-0">Learn Designing</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <a href="#" class="stretched-link mt-0">Continue reading..</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/boot_img/thumb2.jpg" height="230" class="d-block w-100" alt="...">
+
+        <div class="card-body mt-0">
+          <strong class="d-inline-block mb-0 mt-0 text-danger">Design</strong>
+          <h5 class="mb-0">Learn Designing</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <a href="#" class="stretched-link mt-0">Continue reading..</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock body %}

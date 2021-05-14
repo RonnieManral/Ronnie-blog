@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact{% endblock title %}
+{% block css %}
+<style>
+    .container {
+        min-height: 90vh;
+    }
+</style>
+{% endblock css %}
+{% block Contactactive %}active{% endblock Contactactive %}
+{% block body %}
+<div class="container py-4">
+    <h1 class="text-center">Contact Us</h1>
+    <form method="post" action="/contact/">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your Email Address">
+        </div>
+
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="text" class="form-control" id="inputphone" name="phone" placeholder="Enter your Phone No">
+        </div>
+        <div class="mb-3">
+            <label form="address" class="form-label">Address</label>
+            <input type="text" class="form-control" id="inputaddress" name="address"
+                placeholder="street no,area/colony,villa no">
+        </div>
+        <div class="mb-3">
+            <label for="inputCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="inputCity" name="city">
+        </div>
+        <div class="mb-3">
+            <label for="inputState" class="form-label">State</label>
+            <select id="inputState" class="form-select" name="state">
+                <option selected>Patna</option>
+                <option>Uttrakhand</option>
+                <option>Delhi</option>
+                <option>Mumbai</option>
+                <option>Bangalore</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip" name="zip">
+        </div>
+        
+
+        <div class="mb-3">
+            <label for="desc" class="form-label">tell me about what you want to contact me for</label>
+            <textarea class="form-control" id="desc" rows="3" name="desc"></textarea>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+                Check me out
+            </label>
+        </div>
+        <button class="btn btn-success" type="submit">Submit</button>
+        
+
+    </form>
+</div>
+
+
+{% endblock body %}

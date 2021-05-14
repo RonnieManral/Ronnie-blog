@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Blog{% endblock title %}
+{% block Blogactive %}active{% endblock Blogactive %}
+{% block css %}
+<style>
+    .container {
+        min-height: 90vh;
+    }
+</style>
+{% endblock css %}
+{% block body %}
+<div class="container my-3">
+    <h1>Welcome to Ronnie Icoders Blog</h1>
+    {% for blog in blogs %}
+    <div class="media">
+        <div class="media-body my-3">
+            <h3 class="mt-0"><a href="/blogpost/{{blog.slug}}" class="text-dark">{{blog.title}}</a></h3>
+            {{blog.content | slice:245 |safe}}...
+        </div>
+        <a href="/blogpost/{{blog.slug}}" class="text-dark"><button class="btn btn-primary">Read More..</button></a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock body %}
